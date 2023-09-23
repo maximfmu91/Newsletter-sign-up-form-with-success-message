@@ -19,7 +19,7 @@ Users should be able to:
 
 ![](./assets/images/Screenshot.png)
 
-- [https://maximfmu91.github.io/Newsletter-sign-up-form-with-success-message/]
+- [Add live site URL here](https://maximfmu91.github.io/Newsletter-sign-up-form-with-success-message/)
 
 
 ### Built with
