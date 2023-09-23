@@ -1,0 +1,307 @@
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+   box-sizing: border-box; 
+   margin: 0;  
+}
+
+
+
+/*                             FONTS */
+
+
+p, li, .email-field {
+  font-family: "Roboto";
+  font-weight: 400;
+}
+
+h1, .text-email, .wrong-email, .subscribe-newsletter, .success-title, .dismiss-message-button  {
+  font-weight: 700;
+  font-family: 'Roboto', sans-serif;
+}
+
+html {
+    font-size: 62.5%;  
+  }
+
+body {
+  background-color: hsl(234, 29%, 20%);
+   }
+
+    /*                             SECTION */
+
+
+
+ p, li {
+  font-size: 1.6rem;
+}
+
+p {
+   line-height: 2.7rem;
+   margin-bottom: 17px;
+}
+
+.subscribe-features {
+  list-style-type: none;
+  padding-left: 0px;
+  line-height: 34px;
+  margin-bottom: 34px;
+}
+
+li {
+  position: relative;
+  margin-left: 36px;
+}
+
+li::before {
+  content:  "";
+  width: 20px;
+  height: 20px;
+  left: -36px;
+  top: 8px;
+  position: absolute;
+  background-image: url("https://i.ibb.co/LCFBGpY/icon-list.jpg");
+  background-size: 20px 20px;
+  background-position: 0px 0px;
+  background-repeat: no-repeat;
+  
+}
+
+.email-form {
+  display: block;
+}
+
+.email-textbox {
+  display: flex;
+  justify-content: space-between;
+}
+
+.text-email, .wrong-email {
+  display: inline-block;
+  font-size: 1.2rem;
+  margin-bottom: 12px;
+}
+
+.wrong-email {
+  color: hsl(4, 100%, 67%);
+  display: none;
+}
+
+.email-field {
+  width: 100%;
+  height: 56px;
+  border-radius: 10px;
+  margin-bottom: 24px;
+  border: hsl(0, 0%, 78%) solid 1px;
+  padding-left: 24px;
+  font-size: 1.6rem;
+  cursor: pointer;
+  outline: none;
+}
+
+.email-field:focus {
+  border: solid 1px black;
+}
+
+.subscribe-newsletter-button {
+  width: 100%;
+  height: 56px;
+  border-radius: 10px;
+  background-color: hsl(235, 18%, 26%);
+  border: none;
+  color: white;
+  font-size: 1.7rem;
+  cursor: pointer;
+}
+
+
+.subscribe-newsletter-button:hover {
+  background-color: hsl(4, 100%, 67%);
+}
+
+.form-image {
+  max-width: 400px;
+}
+
+.post-image {
+  border-radius: 16px;
+}
+
+
+
+
+/*                             SUCCESS-MESSAGE */
+
+
+
+.success-message {
+  display: none;
+  background-color: hsl(0, 0%, 100%);
+  max-width: 504px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 40px;
+  padding: 48px 64px 64px 64px;
+} 
+
+.icon-success {
+  width: 64px;
+  height: 64px;
+}
+
+
+.subscribe-message {
+  line-height: 24px;
+  margin-bottom: 42px;
+}
+
+
+.dismiss-message-button:hover {
+  background-color: hsl(4, 100%, 67%);
+}
+
+.dismiss-message-button {
+  width: 100%;
+  height: 56px;
+  border-radius: 10px;
+  background-color: hsl(235, 18%, 26%);
+  border: none;
+  color: white;
+  font-size: 1.7rem;
+  cursor: pointer;
+  }
+
+                              /*                            @MEDIA@ */
+
+
+@media (min-width: 481px)  {
+  
+h1 {
+  font-size: 5.7rem;;
+  margin-bottom: 17px;
+}
+  
+
+   .form-page {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    height: 100vh; 
+  }
+  
+  .subscribe-form {
+  max-width: 928px;
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 40px;
+  display: flex;
+  padding-left: 64px;
+  padding-right: 24px;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  }
+  
+  .form-info {
+  max-width: 376px;
+  margin-top: 67px;
+  margin-right: 64px;
+  }  
+  
+  .success-title {
+  font-size: 5.6rem;
+  line-height: 53px;
+  margin-top: 39px;
+  margin-bottom: 28px;
+  }
+} 
+
+
+
+ @media (max-width: 480px) {
+   
+   
+   body {
+  background-color: hsl(234, 29%, 100%);
+   }
+
+  h1 {
+   font-size: 3.9rem;
+   margin-top: 33px;
+   margin-bottom: 19px;
+  }
+   
+   p {
+   line-height: 26px;
+   margin-left: -3px;
+   margin-bottom: 16px;
+   }
+   
+
+  .subscribe-form {
+    max-width: 100%;
+    background-color: hsl(0, 0%, 100%);
+    display: flex;
+    flex-direction:column;  
+  }
+   
+  .form-image {
+    order: -1;
+    max-width: 100%;
+  } 
+   
+   .post-image {
+     border-radius: 0px 0px 16px 16px;
+     width: 100%;
+   }
+   
+   .form-info {
+     padding-left: 27px;
+     padding-right: 22px;
+   }
+   
+   .subscribe-features {
+    line-height: 29px;
+    margin-bottom: 42px;
+   }
+   
+   .subscribe-newsletter-button {
+     margin-bottom: 38px;
+   }
+   
+   .success-message {
+     padding: 48px 25px 40px 26px;
+     border-radius: 0px;
+  } 
+   
+   .icon {
+     margin-top: 100px;
+   }
+   
+   .icon-success {
+    width: 64px;
+    height: 64px;
+  }
+   
+   .success-title {
+    font-size: 4rem;
+    line-height: 38px;
+    margin-top: 39px;
+    margin-bottom: 27px;
+  }
+   
+   .subscribe-message {
+    line-height: 24px;
+    margin-bottom: 264px;
+  }
+   
+   .dismiss-message-button {
+   font-size: 1.6rem;
+  }
+}
+
+
+
+@media (min-width: 376px) and (max-width: 1440px) {
+
+ 
+}
+
