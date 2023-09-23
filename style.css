@@ -198,11 +198,12 @@ h1 {
   padding-right: 24px;
   padding-top: 24px;
   padding-bottom: 24px;
+  justify-content: center; 
+  align-items: center;   
   }
   
   .form-info {
   max-width: 376px;
-  margin-top: 67px;
   margin-right: 64px;
   }  
   
